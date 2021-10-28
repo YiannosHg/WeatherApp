@@ -45,7 +45,7 @@ namespace WeatherApp
             showResult();
         }
 
-        // Sending request to get result from API (Slides implementation)
+        // Sending request to get result from API
         public static async Task<WeatherApiResponse> GetWeatherData(string URL)
         {
             using (var httpClient = new HttpClient())

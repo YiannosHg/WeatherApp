@@ -55,6 +55,7 @@
     <Compile Include="Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
+    <Compile Include="TemperatureUnit.cs" />
     <Compile Include="Weather.cs">
       <SubType>Form</SubType>
     </Compile>

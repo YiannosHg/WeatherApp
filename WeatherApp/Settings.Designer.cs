@@ -31,8 +31,8 @@ namespace WeatherApp
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.celsiusRadioButton = new System.Windows.Forms.RadioButton();
             this.fahrenheitRadioButton = new System.Windows.Forms.RadioButton();
+            this.celsiusRadioButton = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,12 +51,23 @@ namespace WeatherApp
             this.groupBox1.Controls.Add(this.fahrenheitRadioButton);
             this.groupBox1.Controls.Add(this.celsiusRadioButton);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.groupBox1.Location = new System.Drawing.Point(136, 12);
+            this.groupBox1.Location = new System.Drawing.Point(161, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 100);
+            this.groupBox1.Size = new System.Drawing.Size(137, 100);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Units";
+            // 
+            // fahrenheitRadioButton
+            // 
+            this.fahrenheitRadioButton.AutoSize = true;
+            this.fahrenheitRadioButton.Location = new System.Drawing.Point(6, 52);
+            this.fahrenheitRadioButton.Name = "fahrenheitRadioButton";
+            this.fahrenheitRadioButton.Size = new System.Drawing.Size(118, 24);
+            this.fahrenheitRadioButton.TabIndex = 1;
+            this.fahrenheitRadioButton.TabStop = true;
+            this.fahrenheitRadioButton.Text = "Fahrenheit F";
+            this.fahrenheitRadioButton.UseVisualStyleBackColor = true;
             // 
             // celsiusRadioButton
             // 
@@ -69,17 +80,6 @@ namespace WeatherApp
             this.celsiusRadioButton.TabStop = true;
             this.celsiusRadioButton.Text = "Celsius C";
             this.celsiusRadioButton.UseVisualStyleBackColor = true;
-            // 
-            // fahrenheitRadioButton
-            // 
-            this.fahrenheitRadioButton.AutoSize = true;
-            this.fahrenheitRadioButton.Location = new System.Drawing.Point(6, 52);
-            this.fahrenheitRadioButton.Name = "fahrenheitRadioButton";
-            this.fahrenheitRadioButton.Size = new System.Drawing.Size(118, 24);
-            this.fahrenheitRadioButton.TabIndex = 1;
-            this.fahrenheitRadioButton.TabStop = true;
-            this.fahrenheitRadioButton.Text = "Fahrenheit F";
-            this.fahrenheitRadioButton.UseVisualStyleBackColor = true;
             // 
             // Settings
             // 
