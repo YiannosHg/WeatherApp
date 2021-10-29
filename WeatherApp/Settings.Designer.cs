@@ -80,6 +80,7 @@ namespace WeatherApp
             this.celsiusRadioButton.TabStop = true;
             this.celsiusRadioButton.Text = "Celsius C";
             this.celsiusRadioButton.UseVisualStyleBackColor = true;
+            this.celsiusRadioButton.CheckedChanged += new System.EventHandler(this.celsiusRadioButton_CheckedChanged);
             // 
             // Settings
             // 

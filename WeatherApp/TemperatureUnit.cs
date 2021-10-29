@@ -10,7 +10,7 @@ namespace WeatherApp
     {
         public bool tempC { get; }
         public bool tempF { get; }
-
+        
         // Getters implementation
         bool getTempC() { return tempC; }
         bool getTempF() { return tempF; }

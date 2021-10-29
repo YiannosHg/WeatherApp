@@ -22,19 +22,26 @@ namespace WeatherApp
         // Declaring variables
         Settings settings = new Settings();
         WeatherApiResponse weather = new WeatherApiResponse();
-        string apiKey = "9ccbc1d53d964754a0c110925212510";
 
+        // API key
+        const string apiKey = "9ccbc1d53d964754a0c110925212510";
+
+        /** When Settings button is clicked a new window appears
+         *  so that the user can choose temperature unit
+         */
         private void settingsButton_Click(object sender, EventArgs e)
         {
             settings.ShowDialog();
         }
 
-        // async is needed in order to work properly
+        /* When search button is clicked it checks if a values to search was entered
+         * and if so it creates a url to send request to the API
+         */
         private async void searchButton_Click(object sender, EventArgs e)
         {
             if (String.IsNullOrWhiteSpace(searchTextBox.Text))
             {
-                MessageBox.Show("Error please enter country");
+                MessageBox.Show("Please enter country", "Error");
                 return;
             }
 
@@ -58,6 +65,8 @@ namespace WeatherApp
             }
         }
 
+        /* Function used to show the result of API request
+         */
         void showResult()
         {
             locationLabel.Text = $"{ weather.location.name} ({weather.location.region}), {weather.location.country}";

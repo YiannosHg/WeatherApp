@@ -1,4 +1,5 @@
-﻿public class WeatherApiResponse
+﻿// Classes that hold the variables from API
+public class WeatherApiResponse
 {
     public Location location { get; set; }
     public Current current { get; set; }

@@ -16,5 +16,10 @@ namespace WeatherApp
         {
             InitializeComponent();
         }
+
+        private void celsiusRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
